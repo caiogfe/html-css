@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>
+        Imagens Dinâmicas
+    </h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/dalton-p.png" type="image/png"> <!-- a ordem precisa ser do menor para o maior -->
+        <source media="(max-width: 1250px)" srcset="imagens/dalton-m.png" type="image/png"> <!-- source media utiliza max-width (lembra sempre de colocar px) onde vc coloca o tamanho da imagem maior + 50px, caso for menor que isso ele muda para a imagem menor-->
+        <img src="imagens/dalton-g.png" alt="foto grande">
+    </picture>
+    <h1>
+        Reproduzindo Áudios
+    </h1>
+    <p>
+        Vamos aprender a reproduzir áudios em HTML5.
+    </p>
+    <!--formatos mp3 wav ogg-->
+    <audio preload="metadata" controls> <!-- autoplay começa a tocar o audio assim que carrega a página. controls vai exibir o painel de controle do audio (pause, volume, etc.). loop vai tocar o audio novamente assim que ele acabar-->
+        <source src="midia/jingle-moro.mp3" type="audio/mpeg"> <!--a tag audio dá pra adicionar várias sources com formatos de áudio diferente, coloque a principal primeiro, caso ela não carregue, serão carregados outros formatos. Se estes também falharem aparecerá a mensagem de erro abaixo-->
+        <p>
+            Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/jingle-moro.mp3">Clique aqui</a> para fazer o download.
+        </p>
+    </audio> <!--preload indica se o audio será pré-carregado ou não. metadata vai carregar aoebas as informações do arquivo, none não vai carregar nada até que o usuário dê play ou um script inicie a reprodução e auto (padrão) vai carregar o arquivo inteiro mesmo que o usuário nunca dê play no áudio-->
+</body>
+</html>

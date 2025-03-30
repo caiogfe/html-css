@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>
+        Inserindo vídeos hospedados localmente
+    </h1> <!--formatos suportados mp4(m4v) webm ogv--> 
+    <p>
+        Este vídeo está hospedado no meu próprio servidor.
+    </p>
+    <video width="560" poster="imagens/thumb-meme.png" controls> <!--o video aparece em um tamanho desproporcional, o atributo width ajusta as medidas do vídedo (o tamanho do arquivo ainda é o mesmo)-->
+        <source src="midia/money-meme.mp4" type="video/mp4">
+        <source src="midia/money-meme2.webm" type="video/webm">
+        <p>
+            Infelizmente, seu navegador não consegue reproduzir esse vídeo. <a href="midia/money-meme.mp4" target="_blank">Clique aqui</a> para realizar o download.
+        </p>
+    </video>
+    <h1>
+        Inserindo vídeos do YouTube
+    </h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TiusCJULr1o?si=LH7_4QyPEHdTo53B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--nem todo video do youtube vai funcionar, pois o criador do video pode bloquear a reprodução do video em outras plataformas além do youtube-->
+    <h1>
+        Inserindo vídeos do Vimeo
+    </h1>
+    <iframe src="https://player.vimeo.com/video/680855862?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Severance - Intro Title Sequence  / Credits / Opening 4K  ( Apple TV+) Official"></iframe> <!--vimeo é mais privado, enquanto o youtube permite que qualquer um assista o vídeo-->
+</body>
+</html>

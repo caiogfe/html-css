@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>
+        Usando links externos
+    </h1>
+    <p>
+        Você pode usar meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a> <!--target vai permitir abrir o link em uma nova aba, rel identifica a natureza de destino do link-->
+    </p>
+    <p>
+        Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a>:
+    </p><!--tag <a> é âncora, vai levar para o link-->
+    <h1>
+        Usando links internos        
+    </h1>
+    <p><!--a página precisa estar na mesma pasta que o index-->
+        Esta é a primeira página do site. Se você quiser, pode acessar a minha <a href="page002.html" rel="next">segunda página</a>. <!--rel="next" para identificar que o link direciona para a próxima página-->   
+    </p>
+    <p>
+        Você também pode acessar a nossa <a href="noticias/page003.html" target="_self" rel="next">página de notícias</a>. <!--aperte CTRL + ESPAÇO para aparecer as pastas e arquivos-->
+        <!--não é necessário colocar target pra um link que vai substituir a página atual, porém pode ser utilizado target="_self"-->
+    </p>
+    <h1>
+        Links para download
+    </h1>
+    <ul>
+        <li><a href="livro/tormenta20 - jogo do ano.pdf" download="tormenta20 - jogo do ano.pdf" type="application/pdf" target="_blank">Baixar o livro em PDF</a></li>
+        <li><a href="livro/tormenta20 - jogo do ano.zip" download="tormenta20 - jogo do ano.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul> <!--utilize o atributo download com o valor determinado para ser baixado e o atributo type para indicar ao navegador o tipo de arquivo a ser baixado-->
+</body>
+</html>

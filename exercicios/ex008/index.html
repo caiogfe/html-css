@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatado</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <pre> <!--A tag PRE pode ser utilizada para reproduzir fielmente um código, com suas identações e espaços vazios-->
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'0 número {num} é PAR')
+    else:
+        print(f'0 número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code> 
+    </pre> <!-- SHIFT+TAB pode ser utilizado para trazer a identação para a esquerda, enquanto TAB move para a direita-->
+    <h2>Citações Simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p> <!-- Você pode usar aspas, mas para citações é importante usar a tag Q-->
+    <h2>Citações Completas</h2>
+    <p>Segundo J.R.R Tolkien em seu primeiro livro da trilogia O Senhor dos Anéis:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Box_Trilogia_O_Senhor_dos_An%C3%A9is/eVevDwAAQBAJ?hl=pt-BR&gbpv=1&dq=o+senhor+dos+aneis&printsec=frontcover"> <!-- Essa citação não vai aparecer no site, mas irá auxiliar mecanismos de busca e fornece os créditos referente a citação-->
+        Muitos que vivem merecem a morte. E alguns que morrem merecem viver. Você pode dar-lhes a vida? Então não seja tão ávido para julgar e condenar alguém a morte. Pois mesmo os muitos sábios não conseguem ver os dois lados.
+    </blockquote>
+    <h2>
+        Abreviações
+    </h2>
+    <p>
+        Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando! <!-- A tag ABBR vão fornecer um pequeno pop-up com o significado da abreviação-->
+    </p>
+    <h2>
+        Texto Invertido
+    </h2>
+    <p>
+        <bdo dir="rtl">Estou aprendendo a criar coisas em HTML!</bdo>
+    </p>
+</body>
+</html>

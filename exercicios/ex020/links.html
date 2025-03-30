@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+        /*
+        #= id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+        */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(0, 85, 196);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(57, 0, 68);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(204, 0, 0);
+        }
+
+        a:active {
+            color: rgb(0, 255, 13);
+        } /*pseudo-classes definem estados de elementos dentro da HTMl*/
+
+        .especial {
+            background-color: rgb(197, 119, 197);
+        }
+
+        .especial::before {
+            content: ' \21D2 ';
+        }
+
+        .especial::after{
+            content: ' \21D0 ';
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do CursoEmVideo</a></li>
+    </ul>
+    <!--ul>li*3>a shorthand para criar listas-->
+</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*em HTML é id = em CSS é #*/
+/*em HTML é class = em CSS é .*/
+
+
+body {
+    background-color: #C7FFE7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #004A26;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #006531;
+    color: #F2F7F4;
+}
+
+h2 {
+    color: #157145;
+}
+
+p {
+    text-align: justify;
+}
+
+.basico {
+    color: #089c55;
+    font-weight: bold;
+}
+
+.intermediario {
+    color: #9c8108;
+}
+
+.avancado {
+    color: #9c0808;
+} /*para classes não se costuma colocar no exemplo h2.classe e sim apenas .classe, já id se coloca h1#id como no exemplo acima*/
+
+.destaque {
+    background-color: rgba(185, 185, 1, 0.24);
+}
