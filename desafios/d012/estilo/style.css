@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Englebert&family=Lilita+One&display=swap');
+
+:root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Lilita One', Arial, sans-serif;
+    --fonte-cordel: 'Englebert', Times, serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+header > h1 {
+    font: normal bold 8vw var(--fonte-destaque);
+    margin-bottom: 20px;
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    color: white;
+}
+
+header p a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;    
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font: normal bold 4vw var(--fonte-cordel);
+    line-height: 1.3em;
+
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+.textoimg {
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.493);
+}
+
+.textoimg > p {
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.651);
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.616);
+
+    padding: 5px;
+}
+
+#img01 {
+    background-image: url(../imagens/img01.jpg); /*use o ../ para se voltar a pasta*/  
+}
+
+#img02 {
+    background-image: url(../imagens/img02.jpg);
+}
+
+footer {
+    background-color: black;
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
