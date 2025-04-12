@@ -44,7 +44,7 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    font: normal bold 4vw var(--fonte-cordel);
+    font: italic bold 4vw var(--fonte-cordel);
     line-height: 1.3em;
 
 }
