@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 700px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            padding: 6px;
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Milena Carolini</td>
+                <td>Coraline</td>
+                <td>Barbie</td>
+                <td>Terrifier</td>
+            </tr>
+            <tr>
+                <td>Rosangela Garcia</td>
+                <td>A Paixão de Cristo</td>
+                <td>Prova de Fogo</td>
+                <td>Intocáveis</td>
+            </tr>
+            <tr>
+                <td>Beatriz Salomão</td>
+                <td>A Cabana</td>
+                <td>Sexta-feira 13</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Caio Garcia</td>
+                <td>Jurassic Park</td>
+                <td>The Thing</td>
+                <td>La La Land</td>
+            </tr>
+            <tr>
+                <td>Vanderlei Ferreira</td>
+                <td>O Protetor</td>
+                <td>Rambo</td>
+                <td>Aliens 2</td>
+            </tr>
+            <tr>
+                <td>Dalton Leonardo</td>
+                <td>O Profissional</td>
+                <td>Emilia Pérez</td>
+                <td>Conclave</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
