@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            box-sizing: border-box;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px 0px;
+        }
+
+        div#i1 {
+            flex-basis: 200px;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        div#i2 {
+            flex-basis: 200px;
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        div#i3 {
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="i1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam alias consequuntur officia ea ratione ipsam, voluptatum maxime inventore distinctio nobis quibusdam nesciunt iure facere deserunt explicabo odio! Eligendi, voluptatibus nostrum.</div>
+        <div class="item" id="i2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et in veritatis adipisci ipsa totam. Officia, laudantium nemo nesciunt autem quis in aspernatur excepturi animi, officiis nulla debitis omnis optio eveniet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quos necessitatibus quia, non, in nisi obcaecati sunt doloribus sed quo quae distinctio illo iure commodi soluta libero autem explicabo vero!</div>
+        <div class="item" id="i3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex quidem mollitia maxime asperiores excepturi soluta, qui aliquid architecto et magnam quo nisi quisquam tenetur dolores est, tempore, consectetur minima. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquid facere quia ea reiciendis nesciunt vero odio voluptatibus facilis ullam fugit, magni, culpa maxime, illum ipsa odit commodi id minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tenetur voluptatibus reiciendis quibusdam minima vitae culpa iste voluptates excepturi esse quae, corporis similique accusamus obcaecati iusto neque quod cumque ex.</div>
+    </div>
+</body>
+</html>
