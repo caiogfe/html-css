@@ -7,3 +7,45 @@ tablet: 769px a 1024px
 desktop: 1025px a 1200px
 grandes telas: acima de 1201px
 */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    nav#menu {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    main {
+        max-width: 80vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    nav#menu {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    main {
+        max-width: 60vw;
+    }
+}
