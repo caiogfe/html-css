@@ -13,28 +13,28 @@
     gap: 10px;
 }
 
-.topo, .menu, .principal, .secundario, .rodape {
+.item {
     background-color: rgb(255, 217, 0);
     display: grid;
     place-items: center;
 }
 
-.topo {
+#topo {
     grid-area: 1 / 1 / 2 / -1;
 }
 
-.menu {
+#menu {
     grid-area: 2 / 1 / 3 / -1;
 }
 
-.principal {
+#principal {
     grid-area: 3 / 1 / -2 / 2;
 }
 
-.secundario {
+#secundario {
     grid-area: 3 / 2 / -2 / -1;
 }
 
-.rodape {
+#rodape {
     grid-area: -2 / 1 / -1 / -1;
 }
