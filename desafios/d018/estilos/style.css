@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.pagina {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    color: rgb(0, 0, 141);
+    display: grid;
+    grid-template-rows: 2fr 1fr 10fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.topo, .menu, .principal, .secundario, .rodape {
+    background-color: rgb(255, 217, 0);
+    display: grid;
+    place-items: center;
+}
+
+.topo {
+    grid-area: 1 / 1 / 2 / -1;
+}
+
+.menu {
+    grid-area: 2 / 1 / 3 / -1;
+}
+
+.principal {
+    grid-area: 3 / 1 / -2 / 2;
+}
+
+.secundario {
+    grid-area: 3 / 2 / -2 / -1;
+}
+
+.rodape {
+    grid-area: -2 / 1 / -1 / -1;
+}
